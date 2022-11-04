@@ -1,0 +1,60 @@
+/* Rotate left animation */
+@keyframes rotate-left {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/* Rotate right animation */
+
+@keyframes rotate-right {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* oscillate left and right */
+@keyframes rotate-both {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-50px);
+    }
+
+    50% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.rotate-left {
+    animation: rotate-left 1s linear infinite;
+}
+
+.rotate-right {
+    animation: rotate-right 1s linear infinite;
+}
+
+.rotate-both {
+    animation: rotate-both 1s both infinite;
+}
+
+.flip {
+    transform-origin: center;
+    transform: scale(1, -1);
+}
