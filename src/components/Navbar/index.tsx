@@ -19,7 +19,7 @@ export default function Navbar(props: NavbarProps) {
 
     return (
         <nav className="px-4 py-3 m-3 shadow flex justify-between rounded-md items-center">
-            <p className="font-bold text-gray-600">Fast West Turn</p>
+            <p className="font-bold text-gray-600">Fast West Turn Viewer</p>
 
             <div id="others" className="flex gap-2">
                 <GameCounter count={count} />
